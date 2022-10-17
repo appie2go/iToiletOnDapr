@@ -5,16 +5,16 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
-COPY ["BathroomFinderOnDapr.Rating/BathroomFinderOnDapr.Rating.csproj", "BathroomFinderOnDapr.Rating/"]
-RUN dotnet restore "BathroomFinderOnDapr.Rating/BathroomFinderOnDapr.Rating.csproj"
+COPY ["iToiletOnDapr.Rating.csproj", "."]
+RUN dotnet restore "iToiletOnDapr.Rating.csproj"
 COPY . .
-WORKDIR "/src/BathroomFinderOnDapr.Rating"
-RUN dotnet build "BathroomFinderOnDapr.Rating.csproj" -c Release -o /app/build
+WORKDIR "/src"
+RUN dotnet build "iToiletOnDapr.Rating.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "BathroomFinderOnDapr.Rating.csproj" -c Release -o /app/publish
+RUN dotnet publish "iToiletOnDapr.Rating.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "BathroomFinderOnDapr.Rating.dll"]
+ENTRYPOINT ["dotnet", "iToiletOnDapr.Rating.dll"]

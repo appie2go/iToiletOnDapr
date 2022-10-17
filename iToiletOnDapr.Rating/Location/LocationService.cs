@@ -16,7 +16,7 @@ public class LocationService : ILocationService
             .Build();
       
         var result = client.CreateInvokeMethodRequest(HttpMethod.Get, "location", $"toilet/{locationId}");
-        var response = await client.InvokeMethodWithResponseAsync(result);
+        using var response = await client.InvokeMethodWithResponseAsync(result);
         
         switch (response.StatusCode)
         {
