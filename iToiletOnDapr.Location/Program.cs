@@ -10,6 +10,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddTransient<IToiletRepository, ToiletRepository>();
 
+builder.Services.AddDaprClient();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

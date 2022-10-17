@@ -1,3 +1,4 @@
+using iToiletOnDapr.Rating.Location;
 using Microsoft.AspNetCore.Mvc;
 
 namespace iToiletOnDapr.Rating.Ratings;
@@ -8,11 +9,15 @@ public class RatingsController : ControllerBase
 {
     private readonly ILogger<RatingsController> _logger;
     private readonly IRatingRepository _ratingRepository;
+    private readonly ILocationService _locationService;
 
-    public RatingsController(ILogger<RatingsController> logger, IRatingRepository ratingRepository)
+    public RatingsController(ILogger<RatingsController> logger, 
+        IRatingRepository ratingRepository,
+        ILocationService locationService)
     {
         _logger = logger;
         _ratingRepository = ratingRepository;
+        _locationService = locationService;
     }
 
     [HttpGet]
@@ -42,6 +47,12 @@ public class RatingsController : ControllerBase
         if (!ModelState.IsValid)
         {
             return BadRequest();
+        }
+
+        var locationExists = await _locationService.Exists(newRating.ToiletId);
+        if (!locationExists)
+        {
+            return Conflict();
         }
 
         await _ratingRepository.Add(newRating);

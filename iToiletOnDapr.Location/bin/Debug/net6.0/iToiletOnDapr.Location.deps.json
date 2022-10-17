@@ -8,13 +8,98 @@
     ".NETCoreApp,Version=v6.0": {
       "iToiletOnDapr.Location/1.0.0": {
         "dependencies": {
+          "Dapr.AspNetCore": "1.9.0",
           "Swashbuckle.AspNetCore": "6.2.3"
         },
         "runtime": {
           "iToiletOnDapr.Location.dll": {}
         }
       },
+      "Dapr.AspNetCore/1.9.0": {
+        "dependencies": {
+          "Dapr.Client": "1.9.0",
+          "System.IO.Pipelines": "4.7.2"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Dapr.AspNetCore.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.9.0.0"
+          }
+        }
+      },
+      "Dapr.Client/1.9.0": {
+        "dependencies": {
+          "Google.Api.CommonProtos": "2.2.0",
+          "Google.Protobuf": "3.15.0",
+          "Grpc.Net.Client": "2.47.0",
+          "System.Net.Http.Json": "5.0.0"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Dapr.Client.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.9.0.0"
+          }
+        }
+      },
+      "Google.Api.CommonProtos/2.2.0": {
+        "dependencies": {
+          "Google.Protobuf": "3.15.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Api.CommonProtos.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.0"
+          }
+        }
+      },
+      "Google.Protobuf/3.15.0": {
+        "dependencies": {
+          "System.Memory": "4.5.3",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Protobuf.dll": {
+            "assemblyVersion": "3.15.0.0",
+            "fileVersion": "3.15.0.0"
+          }
+        }
+      },
+      "Grpc.Core.Api/2.47.0": {
+        "dependencies": {
+          "System.Memory": "4.5.3"
+        },
+        "runtime": {
+          "lib/netstandard2.1/Grpc.Core.Api.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.47.0.0"
+          }
+        }
+      },
+      "Grpc.Net.Client/2.47.0": {
+        "dependencies": {
+          "Grpc.Net.Common": "2.47.0",
+          "Microsoft.Extensions.Logging.Abstractions": "3.0.3"
+        },
+        "runtime": {
+          "lib/net6.0/Grpc.Net.Client.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.47.0.0"
+          }
+        }
+      },
+      "Grpc.Net.Common/2.47.0": {
+        "dependencies": {
+          "Grpc.Core.Api": "2.47.0"
+        },
+        "runtime": {
+          "lib/net6.0/Grpc.Net.Common.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.47.0.0"
+          }
+        }
+      },
       "Microsoft.Extensions.ApiDescription.Server/3.0.0": {},
+      "Microsoft.Extensions.Logging.Abstractions/3.0.3": {},
       "Microsoft.OpenApi/1.2.3": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.OpenApi.dll": {
@@ -60,7 +145,11 @@
             "fileVersion": "6.2.3.0"
           }
         }
-      }
+      },
+      "System.IO.Pipelines/4.7.2": {},
+      "System.Memory/4.5.3": {},
+      "System.Net.Http.Json/5.0.0": {},
+      "System.Runtime.CompilerServices.Unsafe/4.5.2": {}
     }
   },
   "libraries": {
@@ -69,12 +158,68 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Dapr.AspNetCore/1.9.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-utoBPyJJ/aVL3GQqvHZoz1HRw9yP9noeFOBV/yfJAJfWJiFZnPeypT55V0UlBJZKkeQ2PEgb1hLxJJk03Ou4UQ==",
+      "path": "dapr.aspnetcore/1.9.0",
+      "hashPath": "dapr.aspnetcore.1.9.0.nupkg.sha512"
+    },
+    "Dapr.Client/1.9.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-a/tHunAH/Q8omFMtjXdKnfzrtl7AIpKk0f0Hp3tAxgTD0W5lxhMApADuRiDfm9Je2riXE2P0hJK980m40dhCmQ==",
+      "path": "dapr.client/1.9.0",
+      "hashPath": "dapr.client.1.9.0.nupkg.sha512"
+    },
+    "Google.Api.CommonProtos/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-mxXNYkHYL7T6NG8cdbodxpixQZfpozBkZj2g+jGCB/sO13RqfUvh9YHd8G2QI5HP24brl+nILJReC3/gzgsrrg==",
+      "path": "google.api.commonprotos/2.2.0",
+      "hashPath": "google.api.commonprotos.2.2.0.nupkg.sha512"
+    },
+    "Google.Protobuf/3.15.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2na7LsYrtxkEQaVCNjaafBzVu4IJ4U4+dwwBazK8oUkpDiIFjO0GkyTc+IbStx4xNVAV4EqHl+qp2uegFgFiiA==",
+      "path": "google.protobuf/3.15.0",
+      "hashPath": "google.protobuf.3.15.0.nupkg.sha512"
+    },
+    "Grpc.Core.Api/2.47.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-oZXapxH/2WHAVALghNauo+r/bp6zjgQ6r0v8FizLLQg0/j/FkK2u3WZ7cLOL9Y5H4oLg+wLclO8FSvNTQpNR5Q==",
+      "path": "grpc.core.api/2.47.0",
+      "hashPath": "grpc.core.api.2.47.0.nupkg.sha512"
+    },
+    "Grpc.Net.Client/2.47.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-DLbUC3T8dMmhA2iqpaJo0X4g7fAi3FyVbDd0/jBXrlqc/bcyA1wPBzLx6mWOWoGUb5S89xL2svnsM8SfzzNa2Q==",
+      "path": "grpc.net.client/2.47.0",
+      "hashPath": "grpc.net.client.2.47.0.nupkg.sha512"
+    },
+    "Grpc.Net.Common/2.47.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Cv76h7noEN2s9cwIdEspOeDjeqcU6Nm34OmjSbRhD/FDBXFmG7rmSfJTPCEB1LYjZWfmf7uUH+nYcHR1I7oQqw==",
+      "path": "grpc.net.common/2.47.0",
+      "hashPath": "grpc.net.common.2.47.0.nupkg.sha512"
+    },
     "Microsoft.Extensions.ApiDescription.Server/3.0.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-LH4OE/76F6sOCslif7+Xh3fS/wUUrE5ryeXAMcoCnuwOQGT5Smw0p57IgDh/pHgHaGz/e+AmEQb7pRgb++wt0w==",
       "path": "microsoft.extensions.apidescription.server/3.0.0",
       "hashPath": "microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Logging.Abstractions/3.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-m2Jyi/MEn043WMI1I6J1ALuCThktZ93rd7eqzYeLmMcA0bdZC+TBVl0LuEbEWM01dWeeBjOoagjNwQTzOi2r6A==",
+      "path": "microsoft.extensions.logging.abstractions/3.0.3",
+      "hashPath": "microsoft.extensions.logging.abstractions.3.0.3.nupkg.sha512"
     },
     "Microsoft.OpenApi/1.2.3": {
       "type": "package",
@@ -110,6 +255,34 @@
       "sha512": "sha512-bCRI87uKJVb4G+KURWm8LQrL64St04dEFZcF6gIM67Zc0Sr/N47EO83ybLMYOvfNdO1DCv8xwPcrz9J/VEhQ5g==",
       "path": "swashbuckle.aspnetcore.swaggerui/6.2.3",
       "hashPath": "swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+    },
+    "System.IO.Pipelines/4.7.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rGIIhoY3lUdn9rWeuGdgeZZ0P+SpJ1wZI5g8TnXqgvuhFgUP7iP9Nt5FZebYInQZQxqnwjPxdYYBE5l/8PJmqQ==",
+      "path": "system.io.pipelines/4.7.2",
+      "hashPath": "system.io.pipelines.4.7.2.nupkg.sha512"
+    },
+    "System.Memory/4.5.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3oDzvc/zzetpTKWMShs1AADwZjQ/36HnsufHRPcOjyRAAMLDlu2iD33MBI2opxnezcVUtXyqDXXjoFMOU9c7SA==",
+      "path": "system.memory/4.5.3",
+      "hashPath": "system.memory.4.5.3.nupkg.sha512"
+    },
+    "System.Net.Http.Json/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3CPSQpCzEmI9o+1G79TnPCjF40omCdnoXj2Rg76BDwGj5+LZnFPjV+t35eedlvl+uthmholk/XXxXTYgJWSexw==",
+      "path": "system.net.http.json/5.0.0",
+      "hashPath": "system.net.http.json.5.0.0.nupkg.sha512"
+    },
+    "System.Runtime.CompilerServices.Unsafe/4.5.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wprSFgext8cwqymChhrBLu62LMg/1u92bU+VOwyfBimSPVFXtsNqEWC92Pf9ofzJFlk4IHmJA75EDJn1b2goAQ==",
+      "path": "system.runtime.compilerservices.unsafe/4.5.2",
+      "hashPath": "system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512"
     }
   }
 }

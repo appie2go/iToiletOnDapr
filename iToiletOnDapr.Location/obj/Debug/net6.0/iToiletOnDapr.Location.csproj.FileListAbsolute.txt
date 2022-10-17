@@ -25,3 +25,10 @@
 /Users/albertstarreveld/Documents/code/FunAndGames/BathroomFinderOnDapr/iToiletOnDapr.Location/obj/Debug/net6.0/ref/iToiletOnDapr.Location.dll
 /Users/albertstarreveld/Documents/code/FunAndGames/BathroomFinderOnDapr/iToiletOnDapr.Location/obj/Debug/net6.0/iToiletOnDapr.Location.pdb
 /Users/albertstarreveld/Documents/code/FunAndGames/BathroomFinderOnDapr/iToiletOnDapr.Location/obj/Debug/net6.0/iToiletOnDapr.Location.genruntimeconfig.cache
+/Users/albertstarreveld/Documents/code/FunAndGames/BathroomFinderOnDapr/iToiletOnDapr.Location/bin/Debug/net6.0/Dapr.Client.dll
+/Users/albertstarreveld/Documents/code/FunAndGames/BathroomFinderOnDapr/iToiletOnDapr.Location/bin/Debug/net6.0/Google.Api.CommonProtos.dll
+/Users/albertstarreveld/Documents/code/FunAndGames/BathroomFinderOnDapr/iToiletOnDapr.Location/bin/Debug/net6.0/Google.Protobuf.dll
+/Users/albertstarreveld/Documents/code/FunAndGames/BathroomFinderOnDapr/iToiletOnDapr.Location/bin/Debug/net6.0/Grpc.Core.Api.dll
+/Users/albertstarreveld/Documents/code/FunAndGames/BathroomFinderOnDapr/iToiletOnDapr.Location/bin/Debug/net6.0/Grpc.Net.Client.dll
+/Users/albertstarreveld/Documents/code/FunAndGames/BathroomFinderOnDapr/iToiletOnDapr.Location/bin/Debug/net6.0/Grpc.Net.Common.dll
+/Users/albertstarreveld/Documents/code/FunAndGames/BathroomFinderOnDapr/iToiletOnDapr.Location/bin/Debug/net6.0/Dapr.AspNetCore.dll
