@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "Fqz1/AM53ECA2USWKrbukzVrKLGV9A+oBfYKZeHI2QHF4d+BVWZLpa3vS1h+Lrx53w82vT7RuOAcB/LyWZedCg==",
+  "success": true,
+  "projectFilePath": "/Users/albertstarreveld/Documents/code/FunAndGames/BathroomFinderOnDapr/iToiletOnDapr.Location/iToiletOnDapr.Location.csproj",
+  "expectedPackageFiles": [
+    "/Users/albertstarreveld/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "/Users/albertstarreveld/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/Users/albertstarreveld/.nuget/packages/swashbuckle.aspnetcore/6.2.3/swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "/Users/albertstarreveld/.nuget/packages/swashbuckle.aspnetcore.swagger/6.2.3/swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "/Users/albertstarreveld/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.2.3/swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "/Users/albertstarreveld/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.2.3/swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
