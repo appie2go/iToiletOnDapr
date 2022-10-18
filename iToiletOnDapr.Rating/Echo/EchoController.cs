@@ -4,8 +4,13 @@ namespace iToiletOnDapr.Rating.Echo;
 
 [ApiController]
 [Route("ratings/echo")]
-public class Echo : ControllerBase
+public class EchoController : ControllerBase
 {
+    public EchoController()
+    {
+        
+    }
+
     [HttpGet]
     public ActionResult Get()
     {
